@@ -390,15 +390,15 @@ COPY RULES:
 - Never use real names of living or historical people from the Wikipedia subject — refer to them only by role or category
 - Never use real business names from the Wikipedia subject — refer to them by type only
 - Do not use the words: revolutionary, game-changing, innovative, unlock, leverage, seamlessly
-- adCopy must be under 220 characters. Front-load the most specific and wrong detail first.
 
 OUTPUT:
 1. headline — one punchy sentence in the tone of the format
-2. adCopy — 2-3 sentences. Start in format voice, let it drift.
-3. imageQuery — a 2-3 word Unsplash search term for a visually striking real photo
+2. body — 1-2 sentences in format voice that set up the joke. Max 150 characters.
+3. punchline — the final sentence. The wrongest, most specific thing. Max 100 characters. This line must survive intact.
+4. imageQuery — a 2-3 word Unsplash search term for a visually striking real photo
 
 Return ONLY valid JSON, no markdown, no backticks:
-{"brandName": "...", "headline": "...", "adCopy": "...", "imageQuery": "..."}`;
+{"brandName": "...", "headline": "...", "body": "...", "punchline": "...", "imageQuery": "..."}`;
 
   const res = await fetch("https://api.anthropic.com/v1/messages", {
     method: "POST",
@@ -423,7 +423,8 @@ Return ONLY valid JSON, no markdown, no backticks:
   return {
     brandName: parsed.brandName,
     headline: parsed.headline,
-    adCopy: parsed.adCopy,
+    body: parsed.body,
+    punchline: parsed.punchline,
     imageQuery: parsed.imageQuery,
     format: format.type,
     subjectA: wiki.title,
