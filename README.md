@@ -66,21 +66,23 @@ If you're building something similar, the lesson is that absurdist intent does n
 
 ## Thread structure
 
-Posts are split across two posts to work within Bluesky's 300 character limit:
+Posts split across two posts to stay within Bluesky's 300 character limit.
 
-Post 1 — format label, brand name, headline, satire tag:
+Post 1 — format label, brand name, headline, satire tags:
 
-    [WELLNESS]
-    OrbitalNourish
-    Your magnetosphere deserves better than what you've been giving it.
+    [JOB POSTING]
+    Gastropod Luminescence Solutions Inc.
+    Now Hiring: Experienced Clerestory Window Technicians for Marine Mollusk Installation
     #satire #absurdcorpslop
 
-Post 2 (reply) — body copy:
+Post 2 (reply) — body sets up the joke, punchline lands it:
 
-    Most people are walking around with an undiagnosed solar wind deficiency
-    and don't even know it. OrbitalNourish has spent eleven years mapping
-    the gap between what your body absorbs and what it actually needs from
-    the heliosphere.
+    Are you an experienced clerestory window maintenance professional
+    looking for work in the sea snail installation industry? GLS Inc.
+    is expanding our gastropod division and needs skilled technicians immediately.
+
+    Must have proven experience installing Mitromorpha olivoidea specimens
+    into architectural apertures at heights exceeding 20 feet.
 
 ---
 
